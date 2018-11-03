@@ -30,13 +30,14 @@ if (!isProduction) {
     app.use(errorhandler());
 }
 
+/*
 if (isProduction) {
     mongoose.connect(process.env.MONGODB_URI);
 } else {
     mongoose.connect('mongodb://localhost/conduit');
     mongoose.set('debug', true);
 }
-
+*/
 require('./models/User');
 require('./models/Article');
 require('./models/Comment');
